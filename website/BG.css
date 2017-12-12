@@ -22,3 +22,8 @@ margin:10px;
 a:link{
 				text-decoration: none;
 			}
+section{
+                position:absolute;
+                top:70px;
+                margin-right: 0px;
+            }
