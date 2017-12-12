@@ -13,17 +13,23 @@
     width: 100%;
 }
 .topmenu{
-background-color:rgba(255,255,255,0.5);
-border:5px solid #C00;
-color:#F00;
-font-size:30px;
-margin:10px;
+    background-color:rgba(255,255,255,0.5);
+    border:5px solid #C00;
+    color:#F00;
+    font-size:30px;
+    margin:10px;
 }
 a:link{
-				text-decoration: none;
+	text-decoration: none;
 			}
 section{
-                position:absolute;
-                top:70px;
-                margin-right: 0px;
+    position:absolute;
+    top:70px;
+    margin-right: 0px;
+            }
+.twitter-timeline{
+    float: right;
+    position: fixed;
+    z-index: 5;
+    height: 100%
             }
