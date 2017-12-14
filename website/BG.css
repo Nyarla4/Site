@@ -27,10 +27,12 @@ section{
     top:70px;
     margin-right: 0px;
     margin-left: 10%;
+    background-color: rgba(0,0,0,1)
             }
 .twitter-timeline{
     float: right;
     position: fixed;
     z-index: 5;
-    height: 100%
+    width: 10%;
+    height: auto;
             }
