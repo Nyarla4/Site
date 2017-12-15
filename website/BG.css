@@ -29,10 +29,28 @@ section{
     margin-left: 10%;
     background-color: rgba(0,0,0,1)
             }
+/*
+    포지션이 absolute일때 중앙 정렬
+        left의 값을 50% 으로 잡기
+        margin-left의 값을 정렬하려는 div등의 넓이값/2 나누고 음수(-)값을 입력
+*/
 .twitter-timeline{
     float: right;
     position: fixed;
     z-index: 5;
     width: 10%;
     height: auto;
+            }
+            p{
+    font-size: 20px;
+            }
+            table{
+font-size: 20px;
+font-style: normal;
+            }
+            ul{
+                font-size: 20px;
+            }
+            th{
+text-align: center;
             }
