@@ -3,14 +3,17 @@
 	<head>
 		<title>Welcome to Nechronica</title>
 		<link rel="stylesheet" type="text/css" href="BG.css">
-		<!--<script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+		<script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("img").mouseenter(function(){
-					$("#main").hide();
+				$("a").mouseenter(function(){
+					$("img:first").hide("fast");
+				});
+				$("div").click(function(){
+					$("img").hide(fast);
 				});
 			});
-		</script>-->
+		</script>
 		<style>
 			*{
 				overflow: hidden;
@@ -18,27 +21,29 @@
 			div{
 				margin: 0 auto;
 			}
+			/*
 			#main:hover{
 				display: none;
 			}
 			#main:active{
-				/*display: none;*/
-				visibility: hidden;
+				display: none;
 			}
-			/*#sub1:hover{
-				display: block;
+			#sub1:hover{
+				width: auto;
+				height: auto;
 			}
 			#sub2:active{
 				display: block;
-			}*/
+			}
+			*/
 		</style>
 	</head>
 	<body>
 		<center>
 			<a href="main.html">
-				<img id="main" src="temporary_title.png">
-				<!--<img id="sub1" src="ex1.png" style="display:none">
-				<img id="sub2" src="ex2.png" style="display:none">-->
+				<img id="main" src="temporary_title.png"></br>
+				<img id="sub1" src="ex1.png" style="display:none">
+				<img id="sub2" src="ex2.png" style="display:none">
 			</a>
 		</center>
 		<center>
@@ -62,4 +67,9 @@
 		inherit: 부모 요소의 값을 상속
 		
 		display
+-->
+<!--
+	제이쿼리
+		mouseenter():마우스가선택자 안에 있으면 호출
+		mousedown():마우스버튼이 눌린상태면 호출
 -->
