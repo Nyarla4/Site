@@ -6,11 +6,8 @@
 		<script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("a").mouseenter(function(){
+				$("div").mouseenter(function(){
 					$("img:first").hide("fast");
-				});
-				$("div").click(function(){
-					$("img").hide(fast);
 				});
 			});
 		</script>
@@ -20,6 +17,21 @@
 			}
 			div{
 				margin: 0 auto;
+			}
+			img{
+				width: 700px;
+				height:400px;
+				z-index: 5;
+			}
+			#sub1{
+				position: relative;
+				top: -400px;
+				z-index: 4;
+			}
+			#sub2{
+				position: relative;
+				top: -800px;
+				z-index: 3;
 			}
 			/*
 			#main:hover{
@@ -41,9 +53,9 @@
 	<body>
 		<center>
 			<a href="main.html">
-				<img id="main" src="temporary_title.png"></br>
-				<img id="sub1" src="ex1.png" style="display:none">
-				<img id="sub2" src="ex2.png" style="display:none">
+				<img id="main" src="temporary_title.png">
+				<img id="sub1" src="ex1.png" >
+				<img id="sub2" src="ex2.png" >
 			</a>
 		</center>
 		<center>
