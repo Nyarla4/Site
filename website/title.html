@@ -18,26 +18,27 @@
 			div{
 				margin: 0 auto;
 			}
-			/*#main:hover{
-				display: none;
-			}*/
-			#main:active{
+			#main:hover{
 				display: none;
 			}
-			#sub1:hover{
+			#main:active{
+				/*display: none;*/
+				visibility: hidden;
+			}
+			/*#sub1:hover{
 				display: block;
 			}
 			#sub2:active{
 				display: block;
-			}
+			}*/
 		</style>
 	</head>
 	<body>
 		<center>
 			<a href="main.html">
 				<img id="main" src="temporary_title.png">
-				<img id="sub1" src="ex1.png" style="display:none">
-				<img id="sub2" src="ex2.png" style="display:none">
+				<!--<img id="sub1" src="ex1.png" style="display:none">
+				<img id="sub2" src="ex2.png" style="display:none">-->
 			</a>
 		</center>
 		<center>
@@ -47,8 +48,6 @@
 </html>
 <!--
 	사용 예정
-	:link 		이전에 방문하지 않았을 때-
-	:visited 	이전에 방문했을 때-
 	:active 	링크를 클릭했을 때
 	:hover 		마우스를 올렸을 때
 	visible
@@ -61,4 +60,6 @@
 		hidden: 숨김 (자신의 영역은 계속 차지)
 		collapse: 겹치도록 지정(테이블의 행과 열 요소만 지정할 수 있으며, 그 외 요소의 지정하면 hidden으로 해석)
 		inherit: 부모 요소의 값을 상속
+		
+		display
 -->
