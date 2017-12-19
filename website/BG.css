@@ -34,11 +34,13 @@ section{
         left의 값을 50% 으로 잡기
         margin-left의 값을 정렬하려는 div등의 넓이값/2 나누고 음수(-)값을 입력
 */
-.twitter-timeline{
+nav{
     float: right;
     position: fixed;
+    right: 0px;
+    bottom: 0px;
     z-index: 5;
-    width: 10%;
+    width: auto;
     height: auto;
             }
             p{
