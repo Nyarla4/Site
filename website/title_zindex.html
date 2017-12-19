@@ -14,6 +14,28 @@
 				width: 700px;
 				height:400px;
 			}
+			#main{
+				z-index: 5;
+			}
+			#sub1{
+				position: relative;
+				top: -400px;
+				z-index: 2;
+			}
+			#sub2{
+				position: relative;
+				top: -800px;
+				z-index: 1;
+			}
+			#main:hover{
+				z-index: 0;
+			}
+			img#sub1:hover{
+				z-index: 4;
+			}
+			img#sub2:active{
+				z-index: 6;
+			}
 		</style>
 	</head>
 	<body>
@@ -27,7 +49,9 @@
 		</center>
 		<center>
 			<a href="main.html">
-				<img id="main" src="temporary_title.png">
+				<img id="main" src="temporary_title.png"></br>
+				<img id="sub1" src="ex1.png"></br>
+				<img id="sub2" src="ex2.png"></br>
 			</a>
 		</center>
 	</body>
