@@ -10,9 +10,32 @@
 			div{
 				margin: 0 auto;
 			}
-			img{
-				width: 700px;
-				height:400px;
+			#imgDiv {
+			width: 700px;
+			height: 400px;
+			position: relative;
+			left: 07%;
+			}
+			#imgDiv img {
+			width: 700px;
+			height: 400px;
+			position: absolute;
+			left: -15%;
+			}
+			#imgDiv > #first {  
+			opacity: 0;
+			transition: opacity 1s
+			}
+			#imgDiv:hover > #first {
+			opacity: 1;
+			}
+			#imgDiv > #second {  
+			opacity: 0;
+			transition: opacity 1s
+			}
+			
+			#imgDiv:active > #second {
+			opacity: 1;
 			}
 		</style>
 	</head>
@@ -26,11 +49,13 @@
 				뒤로가기, 혹은 나가기를 눌러주시기 바랍니다.
 			</div>
 		</center>
-		<center>
-			<a href="main.html">
-				<img id="main" src="temporary_title.png">
-			</a>
-		</center>
+		<a href="main.html">
+			<div id="imgDiv">
+				<img src="temporary_title.png">
+				<img id="first" src="ex1.png">
+				<img id="second" src="ex2.png">
+			</div>
+		</a>
 	</body>
 </html>
 <!--
