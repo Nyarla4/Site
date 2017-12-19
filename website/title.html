@@ -10,20 +10,26 @@
 			div{
 				margin: 0 auto;
 			}
-			img:hover{
-				visibility: hidden;
-				background-image: url("ex1.png");
+			#main:hover{
+				display: none;
 			}
-			img:active{
-				visibility: hidden;
-				background-image: url("ex2.png");
+			#main:active{
+				display: none;
+			}
+			#sub1:hover{
+				display: block;
+			}
+			#sub2:active{
+				display: block;
 			}
 		</style>
 	</head>
 	<body>
 		<center>
 			<a href="main.html">
-				<img class="main" src="temporary_title.png" style="visibility: visible">
+				<img id="main" src="temporary_title.png">
+				<img id="sub1" src="ex1.png" style="display:none">
+				<img id="sub2" src="ex2.png" style="display:none">
 			</a>
 		</center>
 		<center>
