@@ -3,14 +3,6 @@
 	<head>
 		<title>Welcome to Nechronica</title>
 		<link rel="stylesheet" type="text/css" href="BG.css">
-		<script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
-		<script>
-			$(document).ready(function(){
-				$("div").mouseenter(function(){
-					$("img:first").hide("fast");
-				});
-			});
-		</script>
 		<style>
 			*{
 				overflow: hidden;
@@ -21,45 +13,40 @@
 			img{
 				width: 700px;
 				height:400px;
-				z-index: 5;
 			}
 			#sub1{
 				position: relative;
 				top: -400px;
-				z-index: 4;
+				visibility: hidden;
 			}
 			#sub2{
 				position: relative;
 				top: -800px;
-				z-index: 3;
+				visibility: hidden;
+			}/*
+			img:hover{
+				visibility: hidden;
 			}
-			/*
-			#main:hover{
-				display: none;
-			}
-			#main:active{
-				display: none;
-			}
-			#sub1:hover{
-				width: auto;
-				height: auto;
-			}
-			#sub2:active{
-				display: block;
-			}
-			*/
+			img#sub1:hover{
+				visibility: visible;
+			}*/
 		</style>
 	</head>
 	<body>
 		<center>
-			<a href="main.html">
-				<img id="main" src="temporary_title.png">
-				<img id="sub1" src="ex1.png" >
-				<img id="sub2" src="ex2.png" >
-			</a>
+			<div style="color:red;text-align:center">
+				</br>
+				<b style="color:red;text-align:center">주의</b>
+				</br>이 룰은 고어, 료나 등의 내용을 다루고 있습니다.</br>
+				이러한 내용에 거부감을 가지고 있거나, 트라우마를 가지신 분은 뒤로가기, 혹은 나가기를 눌러주시기 바랍니다.
+			</div>
 		</center>
 		<center>
-			<div style="color:red;text-align:center">이 룰은 고어, 료나 등의 내용을 다루고 있습니다. </br>이러한 내용에 거부감을 가지고 있거나, 트라우마를 가지신 분은 뒤로가기, 혹은 나가기를 눌러주시기 바랍니다.</div>
+			<a href="main.html">
+				<img id="main" src="temporary_title.png">
+				<img id="sub1" src="ex1.png">
+				<img id="sub2" src="ex2.png">
+			</a>
 		</center>
 	</body>
 </html>
