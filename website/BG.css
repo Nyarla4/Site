@@ -40,8 +40,8 @@ nav{
     right: 0px;
     bottom: 0px;
     z-index: 5;
-    width: 260px;/*auto=520px*/
-    height: auto;/*auto=605px*/
+    width: 15%;/*auto=520px*/
+    height: 50%;/*auto=605px*/
             }
             p{
     font-size: 20px;
@@ -55,4 +55,7 @@ font-style: normal;
             }
             th{
 text-align: center;
+            }
+            img{
+                background-color:rgba(0,0,0,0)
             }
